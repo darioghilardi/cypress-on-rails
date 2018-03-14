@@ -1,6 +1,7 @@
 module Cypress
   class Configuration
-    attr_accessor :test_framework, :db_resetter, :cache_classes, :server_port
+    attr_accessor :test_framework, :db_resetter, :cache_classes,
+      :server_port, :server_host
 
     def initialize(args=[])
       setup(args)
