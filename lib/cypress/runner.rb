@@ -12,6 +12,8 @@ module Cypress
         sout.each_line do |line|
           puts "CYPRESS: #{line}"
         end
+
+        status.value.exitstatus
       end
     end
 
